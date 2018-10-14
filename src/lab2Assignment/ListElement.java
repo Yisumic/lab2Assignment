@@ -1,7 +1,6 @@
 package lab2Assignment;
 
-public class ListElement
-{
+public class ListElement{
 	
 		
 		public ListElement next;
@@ -9,23 +8,24 @@ public class ListElement
 		private int data;
 		
 		
-		public ListElement()
-		{
+		public ListElement(){
+			
 			this.next = null;
 			this.data = 0;
 			
 		}
 		
 		
-		public void setData(int data)
-		{
+		public void setData(int data){
+			
 			this.data = data;
 		}
 
 		
-		public int getData()
-		{
+		public int getData(){
+			
 			return this.data;
+			
 		}
 }
 
