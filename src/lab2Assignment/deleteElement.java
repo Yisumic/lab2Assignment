@@ -8,6 +8,7 @@ public class deleteElement {
 	  
 	    ListElement current = head;
 	    ListElement parent = null;
+	    
 	    int index = 0;
 	    
 	    while (current != null && index < position) {
@@ -24,15 +25,16 @@ public class deleteElement {
 	        if (current.next != null) {
 	           
 	            head = current.next;
-	        }
-	        else {
+	            
+	        }else {
 	            
 	            head = null;
+	            
 	        }
-	    }
-	    else if (current != null) {
+	    }else if (current != null) {
 	       
 	        parent.next = current.next;
+	        
 	    }
 	    
 	    return head;
