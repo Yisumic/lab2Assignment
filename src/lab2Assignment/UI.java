@@ -11,14 +11,17 @@ public class UI {
 		
 		// TODO Auto-generated method stub
 		
-		
-		Scanner sc = new Scanner(System.in);
+		int number = 0;
+	
+		while(number != 5) {	
+			
+		Scanner sc= new Scanner(System.in);
 		System.out.println("Please enter the the number ");
 		System.out.println("1 : Add Element ");
 		System.out.println("2 : Delete Element ");
 		System.out.println("3 : Print Elemnet From Head ");
 		System.out.println("4 : Print Elemnet From Tail ");
-		int number = sc.nextInt();
+		number = sc.nextInt();
 		
 		String element = null;
 		int position = 0;
@@ -28,10 +31,11 @@ public class UI {
 		case 1: addElements(element);
 		case 2: delete(head,position);
 		case 3: System.out.println("list");
+		case 4:
 		
+		}
+		}
 	}
-
-}
 
 public static void addElements(String element) {
 		
@@ -41,7 +45,7 @@ public static void addElements(String element) {
 		
 		ListElement.add(list);
 	
-	}
+}
 
 public static ListElement delete(ListElement head, int position) {
 	  
@@ -78,5 +82,6 @@ public static ListElement delete(ListElement head, int position) {
     
     return head;
 }
+
 }
 	
