@@ -9,29 +9,33 @@ public class UI {
 	 */
 	public static void main(String[] args){
 		
-		// TODO Auto-generated method stub
-		
+		ListElement head = null;
+		ListElement linkedList = null;
+		ListElement revise = null;
+		String element = null;
 		int number = 0;
+		int position = 0;
 	
 		while(number != 5) {	
 			
-		Scanner sc= new Scanner(System.in);
+		Scanner Sc= new Scanner(System.in);
 		System.out.println("Please enter the the number ");
 		System.out.println("1 : Add Element ");
 		System.out.println("2 : Delete Element ");
 		System.out.println("3 : Print Elemnet From Head ");
 		System.out.println("4 : Print Elemnet From Tail ");
-		number = sc.nextInt();
+		System.out.println("5: quit");
 		
-		String element = null;
-		int position = 0;
-		ListElement head = null;
+		number = Sc.nextInt();
+		
+		
 		
 		switch(number){
-		case 1: addElements(element);
-		case 2: delete(head,position);
-		case 3: System.out.println("list");
-		case 4:
+		case 1: addElements(element);break;
+		case 2: delete(head,position);break;
+		case 3: System.out.println(linkedList);break;
+		case 4: System.out.println(revise);break;
+		case 5: break;
 		
 		}
 		}
@@ -39,12 +43,17 @@ public class UI {
 
 public static void addElements(String element) {
 		
-		String list = null;
-		
+		String list;
 		LinkedList<String> ListElement = new LinkedList<String>();
 		
+		System.out.println("Please enter the the elements ");
+		Scanner ele= new Scanner(System.in);
+		list = ele.nextLine();
+		
 		ListElement.add(list);
-	
+		
+		
+		
 }
 
 public static ListElement delete(ListElement head, int position) {
@@ -53,6 +62,11 @@ public static ListElement delete(ListElement head, int position) {
     ListElement parent = null;
     
     int index = 0;
+    
+    System.out.println("Please enter the the elements position ");
+    Scanner po= new Scanner(System.in);
+    position = po.nextInt();
+    
     
     while (current != null && index < position) {
     	
@@ -82,6 +96,10 @@ public static ListElement delete(ListElement head, int position) {
     
     return head;
 }
+
+
+
+
 
 }
 	
