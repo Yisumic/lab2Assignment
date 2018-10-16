@@ -16,15 +16,14 @@ public class UI {
 		int number = 0;
 		int position = 0;
 	
-		while(number != 5) {	
+		while(number != 4) {	
 			
 		Scanner Sc= new Scanner(System.in);
 		System.out.println("Please enter the the number ");
 		System.out.println("1 : Add Element ");
 		System.out.println("2 : Delete Element ");
 		System.out.println("3 : Print Elemnet From Head ");
-		System.out.println("4 : Print Elemnet From Tail ");
-		System.out.println("5: quit");
+		System.out.println("4: quit");
 		
 		number = Sc.nextInt();
 		
